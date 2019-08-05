@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bit/react-bootstrap.react-bootstrap.button": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.form": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.form-control": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.internal.style-links": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.nav": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.nav-dropdown": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.navbar": "file:components/navbar",
+    "axios": "^0.19.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -11,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +38,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.1.10",
+    "@storybook/addon-links": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/react": "^5.1.10"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

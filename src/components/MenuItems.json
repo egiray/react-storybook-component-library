@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Action",
+    "id": 1,
+    "link": "/action"
+  },
+  {
+    "name": "Adventure",
+    "id": 2,
+    "link": "/adventure"
+  },
+  {
+    "name": "Arcade",
+    "id": 3,
+    "link": "/arcade"
+  },
+  {
+    "name": "Cooking",
+    "id": 20,
+    "link": "/cooking"
+  }
+]
