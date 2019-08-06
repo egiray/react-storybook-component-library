@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+// import './App.css';
+import Menu from './components/Menu';
+import List from './components/List'
+import menuItems from './components/MenuItems.json'
+import GamePlay from './components/GamePlay'
 
 function App() {
+  const [category, setCategory] = useState('All')
+  const [game, setGame] = useState();
+
+  const handleCategoryChange = category => {
+    setCategory(category)
+    setGame()
+  };
+  const handleGameChange = game => {
+    console.log(game) 
+    setGame(game)
+  }
+  
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Menu menuItems={menuItems} categoryChange={handleCategoryChange}/>
       </header>
+      <main>
+        {!game ? 
+          <List category={category} gameChange={handleGameChange}/>
+        :
+          <GamePlay {...game}/>
+        }
+        
+      </main>
     </div>
   );
 }
 
 export default App;
+ 

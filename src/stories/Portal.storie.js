@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Portal from './Portal'
+import Portal from '../components/Portal'
 
 
 storiesOf('Portal', module)

@@ -2,12 +2,11 @@ import React from 'react'
 import './Card.css'
 
 const Card = props => {
-
   const {title, assetList}  = props;
-  const thumb = assetList.pop().name;
-
+  const thumb = (assetList !== undefined && assetList.length > 0) ? assetList.pop().name : ""
+  
   return (
-    <div>
+    <div onClick={()=>props.gameChange(props)}>
       <span>{title}</span>
       <img src={thumb} alt="" style={cardStyles.image}/>
     </div>
