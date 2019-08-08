@@ -2,3 +2,9 @@ img {
   width: 200px;
   height: 200px;
 }
+
+.cardContainer{
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+}

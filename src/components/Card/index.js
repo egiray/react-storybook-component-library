@@ -6,9 +6,10 @@ const Card = props => {
   const thumb = (assetList !== undefined && assetList.length > 0) ? assetList.pop().name : ""
   
   return (
-    <div onClick={()=>props.gameChange(props)}>
-      <span>{title}</span>
+    <div onClick={()=>props.gameChange(props)} className="cardContainer">
+      
       <img src={thumb} alt="" style={cardStyles.image}/>
+      <span>{title}</span>
     </div>
   )
 }

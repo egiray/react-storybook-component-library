@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import './App.css';
+import './App.css';
 import Menu from './components/Menu';
 import List from './components/List'
 import menuItems from './components/Menu/MenuItems.json'
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <Menu menuItems={menuItems} categoryChange={handleCategoryChange}/>
       </header>
       <main>
