@@ -5,7 +5,8 @@ const Menu = props => {
 
 
   return (
-    <ul className="navigation">
+    <ul className="navigation" role="navigation">
+      
         {(menuItems !== undefined || menuItems.length > 0) &&
           menuItems.map(item=> (
             <li 

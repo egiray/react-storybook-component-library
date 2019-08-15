@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Menu menuItems={menuItems} categoryChange={handleCategoryChange}/>
+          <Menu menuItems={menuItems} categoryChange={handleCategoryChange}/>
       </header>
       <main>
         {!game ? 
