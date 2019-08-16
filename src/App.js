@@ -10,6 +10,7 @@ function App() {
   const [game, setGame] = useState();
 
   const handleCategoryChange = category => {
+    
     setCategory(category)
     setGame()
   };
