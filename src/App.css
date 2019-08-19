@@ -18,21 +18,17 @@ iframe{
 header {
   margin: 10px 0px 0px 0px; 
   background: deepskyblue;
-  display: flex;
   box-shadow: 5px 15px 5px -20px #b6b6b6; 
   border-radius: 5px;
 }
 
-header a {
+a {
   text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
 }
 
-h3{
-  margin: 0;
-}
+
+
+/*
 
 header li:hover {
   background: darken(rgb(52, 105, 122), 2%);
@@ -45,4 +41,4 @@ header ul{
   padding: 0;
   justify-content: flex-end;
   margin: 0;
-}
+} */
