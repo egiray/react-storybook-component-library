@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import List from './components/List'
-import menuItems from './components/Menu/MenuItems.json'
+import menuItems from './components/NavBar/MenuItems.json'
 import GamePlay from './components/GamePlay'
 
 function App() {

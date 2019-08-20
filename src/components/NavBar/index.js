@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Menu = props => {
+const NavBar = props => {
   const menuItems = (props.menuItems) ? props.menuItems : [
     {
       "name": "Action",
@@ -30,7 +30,10 @@ const Menu = props => {
 		flex-direction: row;
     justify-content: space-between;    
     align-items:baseline;
-    height:80px;
+    margin: 10px 5px 0px 5px; 
+    background: deepskyblue;
+    box-shadow: 5px 15px 5px -20px #b6b6b6; 
+    border-radius: 5px;    
   `
 
   const Ul = styled.ul`
@@ -42,11 +45,16 @@ const Menu = props => {
     display: block;
     padding: 1em;
     color: white;
+    text-decoration: none;
+  `
+
+  const H3 = styled.h3`
+    margin:0;
   `
 
   return (
     <NavBar>
-      <h3><A href="/">Game Portal Logo</A></h3>
+      <H3><A href="/">Game Portal Logo</A></H3>
       <Ul className="navigation" role="navigation">
         {(menuItems !== undefined || menuItems.length > 0) &&
           menuItems.map(item => (
@@ -64,4 +72,4 @@ const Menu = props => {
   );
 };
 
-export default Menu;
+export default NavBar;

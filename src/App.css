@@ -15,13 +15,6 @@ iframe{
   border: 0
 }
 
-header {
-  margin: 10px 0px 0px 0px; 
-  background: deepskyblue;
-  box-shadow: 5px 15px 5px -20px #b6b6b6; 
-  border-radius: 5px;
-}
-
 a {
   text-decoration: none;
 }
